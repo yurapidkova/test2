@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <magetest_dynamic>
+            <label>Mage Test</label>
+            <sort_order>99999</sort_order>
+        </magetest_dynamic>
+    </tabs>
+    <sections>
+        <magetest_dynamic>
+            <label>Mage Test</label>
+            <tab>magetest_dymanmic</tab>
+            <groups>
+                <dynamic_value>
+                    <label>Product Additional Data</label>
+                    <comment>Set Additional Data To Product</comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <code>
+                            <label>Attribute Code</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </code>
+                        <value>
+                            <label>Attribute Value</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </value>
+                    </fields>
+                </dynamic_value>
+            </groups>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <sort_order>10</sort_order>
+        </magetest_dynamic>
+    </sections>
+</config>

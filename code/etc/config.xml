@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magetest_Dynamic>
+            <version>0.1.0</version>
+        </Magetest_Dynamic>
+    </modules>
+    <global>
+        <models>
+            <magetest_dynamic>
+                <class>Magetest_Dynamic_Model</class>
+            </magetest_dynamic>
+        </models>
+        <helpers>
+            <magetest_dynamic>
+                <class>Magetest_Dynamic_Helper</class>
+            </magetest_dynamic>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_layout_render_before_catalog_product_view>
+                <observers>
+                    <magetest_dynamic>
+                        <type>singleton</type>
+                        <method>controllerActionLayoutRenderBeforeCatalogProductView</method>
+                        <class>magetest_dynamic/observer</class>
+                    </magetest_dynamic>
+                </observers>
+            </controller_action_layout_render_before_catalog_product_view>
+        </events>
+    </frontend>
+    <default>
+        <magetest_dynamic>
+            <dynamic_value>
+                <code>custom_attribute</code>
+                <value>Custom Value</value>
+            </dynamic_value>
+        </magetest_dynamic>
+    </default>
+</config>
